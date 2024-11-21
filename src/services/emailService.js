@@ -11,9 +11,9 @@ export const sendOrderNotification = async (orderDetails) => {
       TEMPLATE_ID,
       {
         order_items: orderDetails.items.map(item => 
-          `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`
+          `${item.name} x ${item.quantity} = ₹${(item.price * item.quantity).toFixed(2)}`
         ).join('\n'),
-        total_amount: `$${orderDetails.total.toFixed(2)}`,
+        total_amount: `₹${orderDetails.total.toFixed(2)}`,
         customer_email: orderDetails.email,
         customer_name: orderDetails.name,
         customer_phone: orderDetails.phone,

@@ -90,7 +90,7 @@ const Cart = () => {
                         />
                         <div>
                           <h3 className="font-semibold">{item.name}</h3>
-                          <p className="text-gray-600">${item.price}</p>
+                          <p className="text-gray-600">₹{item.price}</p>
                         </div>
                       </div>
                       <div className="flex items-center space-x-4">
@@ -138,7 +138,7 @@ const Cart = () => {
                 <div className="mt-6 border-t pt-4">
                   <div className="flex justify-between items-center mb-4">
                     <span className="font-semibold">Total:</span>
-                    <span className="font-bold text-xl">${totalAmount.toFixed(2)}</span>
+                    <span className="font-bold text-xl">₹{totalAmount.toFixed(2)}</span>
                   </div>
                   {showOrderForm ? (
                     <OrderForm onSubmit={handleOrder} />
