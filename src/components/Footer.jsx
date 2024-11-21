@@ -50,18 +50,18 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a onClick={sendMessage} title='Reach us on Whatsapp' className="text-gray-400 hover:text-white">
+              <p onClick={sendMessage} title='Reach us on Whatsapp' className="text-gray-400 hover:text-white">
                 <MessageCircleMore className="w-6 h-6" />
-              </a>
-              <a title='Checkout our Instagram Profile' className="text-gray-400 hover:text-white">
+              </p>
+              <p title='Checkout our Instagram Profile' className="text-gray-400 hover:text-white">
                 <Instagram onClick={redirectToInstagram} className="w-6 h-6" />
-              </a>
-              <a title='Checkout our Instagram Profile' className="text-gray-400 hover:text-white">
+              </p>
+              <p title='Checkout our Instagram Profile' className="text-gray-400 hover:text-white">
                 <Facebook onClick={redirectToFacebook} className="w-6 h-6" />
-              </a>
-              <a title='Checkout our Youtube Channel' className="text-gray-400 hover:text-white">
+              </p>
+              <p title='Checkout our Youtube Channel' className="text-gray-400 hover:text-white">
                 <Youtube onClick={redirectToYouTube} className="w-6 h-6" />
-              </a>
+              </p>
               <a href={`mailto:${emailId}`} title='Send us an Email' className="text-gray-400 hover:text-white">
                 <Mail className="w-6 h-6" />
               </a>
